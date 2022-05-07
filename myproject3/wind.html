@@ -155,7 +155,7 @@
        padding: 20px 0;
    }
 
-   .list66{
+   #list66{
        list-style-type: disc;
        position: relative;
        top: 180px;
@@ -177,11 +177,22 @@
        left: 500px;
    }
 
-   h2{
+  /* h2{
        position: relative;
        top: 150px;
        color: antiquewhite;
        left: 550px;
+   }*/
+
+   .btn2{
+       padding: 10px;
+       font-weight: bold;
+       background-color: #eee;
+       color: #000;
+       position: relative;
+       top:150px ;
+       left:550px ;
+
    }
 
 
@@ -228,18 +239,39 @@
              include brass, silver, cane, as well as other metals such as gold and platinum. The <br>saxophone, for example,though made of brass, is considered 
              a woodwind because it requires a reed to produce sound.<br>
              Occasionally, woodwinds are made of earthen materials, especially ocarinas.
-           </p>
+        </p>
 
        </div>
-       <h2>types</h2>
+      
+
+       <div>
+           <button class="btn2"  onclick="show_hide()">types</button>
+       </div>
        
-        <ul class="list66">
-            <li class="list67"><a href="D:\الجهاز القديم\myproject\index.html" class="link66" >Recorders</a></li>
-            <li  class="list67"><a href="D:\الجهاز القديم\myproject\index.html" class="link66" >Clarinets </a></li>
-            <li  class="list67"><a href="D:\الجهاز القديم\myproject\index.html" class="link66" >Saxophones</a></li>
-            <li  class="list67"><a href="D:\الجهاز القديم\myproject2\shopping2.html" class="link66" >Harmonicas</a></li>
-            <li  class="list67"><a href="D:\الجهاز القديم\myproject2\shopping2.html" class="link66" >Flutes</a></li>
-            <li  class="list67"><a href="D:\الجهاز القديم\myproject2\shopping2.html" class="link66" >Trumpets</a></li>
+        <ul id="list66">
+            <li class="list67"><a href="D:\الجهاز القديم\instruments store\myproject\mainROAA.html" class="link66" >Recorders</a></li>
+            <li  class="list67"><a href="#" class="link66" >Clarinets </a></li>
+            <li  class="list67"><a href="#" class="link66" >Saxophones</a></li>
+         
         </ul>
+        <script>
+            var a;
+            function show_hide()
+            {
+                if(a==1)
+                {
+                    document.getElementById("list66").style.display="inline";
+                    return a=0;
+                }
+                else{
+                    document.getElementById("list66").style.display="none";
+                    return a=1;
+
+                }
+
+            }
+
+
+        </script>
     
    </body>
